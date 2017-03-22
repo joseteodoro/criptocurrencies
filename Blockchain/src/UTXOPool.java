@@ -14,7 +14,7 @@ public class UTXOPool {
         H = new HashMap<UTXO, Transaction.Output>();
     }
 
-    /** Creates a new UTXOPool that is a copy of {@code uPool} */
+    /** Creates a new UTXOPool that is a copy of {@code unspentPool} */
     public UTXOPool(UTXOPool uPool) {
         H = new HashMap<UTXO, Transaction.Output>(uPool.H);
     }
